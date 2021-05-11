@@ -3,10 +3,10 @@ name: Lint
 on:
   pull_request:
     branches:
-      - feature/*
+      - '*'
   push:
     branches:
-      - main
+      - '*'
 
 jobs:
   eslint:
