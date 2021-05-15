@@ -1,0 +1,17 @@
+image: node
+
+stages:
+    - lint
+    - test
+
+eslint:
+  stage: lint
+  script:
+    - yarn install --frozen-lockfile
+    - yarn run lint
+
+jest:
+  stage: test
+  script:
+    - yarn install --frozen-lockfile
+    - yarn test

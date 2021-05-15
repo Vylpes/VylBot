@@ -1,1 +1,3 @@
-console.log("VylBot");
+import { Client } from "./client/client";
+
+new Client();
