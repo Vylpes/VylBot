@@ -1,3 +1,3 @@
 import { Client } from "./client/client";
 
-const p = new Client();
+new Client();

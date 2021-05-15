@@ -10,5 +10,7 @@ export class Client {
         this._config = new Config();
 
         this._discord.login(this._config.GetToken());
+
+        console.log('Ready');
     }
 }
