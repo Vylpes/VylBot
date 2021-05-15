@@ -6,7 +6,11 @@ const rl = readline.createInterface({
 });
 
 rl.question("Token: ", token => {
+    if (token.length == 0) process.exit(1);
+
     rl.question("Prefix: ", prefix => {
+        if (prefix.length == 0) process.exit(1);
+
         fs.writeFileSync("./config.json", JSON.stringify({
             token: token,
             prefix: prefix
