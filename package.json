@@ -14,7 +14,7 @@
     "build": "tsc",
     "start": "node dist/index",
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.23.0",
